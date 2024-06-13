@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Choose Your Own Adventure</title>
+        <title>Deep Patel</title>
     </head>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     
     <body>
+        
+        
         <!-- Add a title and edit the opening of your story. -->
-        <div class="story"> 
-            <p id="storyText"></p>How will it End? </div>
-        <div class="story-opening">
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
-            <h1>You and your research team were exploring the Amazon Rainforest however you end up lost. What will you do?</h1>
-        </div>
+        
 
-        <!-- Change the text of the buttons to the options relevant to your story. -->
-        <div class="buttons">
+        <div class="Name">
+            <h1>Input Name</h1>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <button class="Submit">Submit</button>
+        </div>
+        
+        <!-- start of the story-->
+        <div class="story"> 
+            <p id="storyText"> Choose your Own Adventure Story: Amazon Rainforest</p> 
+            <h1 class="namedisplay"></h1>
+        </div>
+            <div class="story-opening">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDk409i_nYSadt9QM_1chlwfp01ybnmfI2Tw&s">
+            <h1>You and your research team were exploring the Amazon Rainforest however you end up lost. What will you do?</h1>
             <button class="option-one">Find a Way Out!</button>
             <button class="option-two"> Don't worry and just keep exploring</button>
-            <button class="option-1-1">Ask for Help!</button>
-            <button class="option1-2">Stalk Them</button>
-
         </div>
 
         <!-- Put the part of the story the user will see if they picked option one. -->
         <div class="option-one-screen">
             <h1>You find a tourist!</h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
+            <img src="https://www.galapagosislands.com/blog/wp-content/uploads/2017/07/canoe-amazon-jungle-ecuador.jpg">
+            <button class="option-1-1">Ask for Help!</button>
+            <button class="option1-2">Stalk Them</button>
         </div>
 
         <!-- Put the part of the story the user will see if they picked option two. -->
-        <div class="option-two-screen">
-            <h1> You end up living with the animals and become a native </h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
+        <div class="option-two-end">
+            <h1> Interesting?! You are an Amazonian! You are one with the animals and become a native. </h1>
+            <img src="https://www.ohchr.org/sites/default/files/2022-08/story-2022-amazon-ip-main.jpg">
+            <button class="startover5"> Start Over</button>
         </div>
 
-        <!--Put the end of the story if the user chose option 1.-->
-        <div class="option-one-end">
-            <h1>Put final part of your story based on if they chosen option 1 at the beginning </h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
+        <div class="option-one-one">
+            <h1>Hooray! The Tourists tell you how to get to base Camp. What do you do now? </h1>
+            <img src="https://static.vecteezy.com/system/resources/previews/010/492/543/large_2x/wooden-sign-arrow-in-green-forest-at-carpathian-forest-photo.jpg">
+            <button class="option-1-1-1">Trust and follow the directions</button>
+            <button class="option1-1-2">Tag Along and Hope</button>
         </div>
-        <div class="option-1-1-screen">
-            <h1>The tourist tells you how to get to base!</h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
+        <div class="option-one-two">
+            <h1>Wow! You took an interesting route! Choose an outcome that fate has decided</h1>
+            <img src="https://concept.paloaltou.edu/hubfs/Blog_Featured_Image_Stalking.jpg" alt="stalk">
+            <button class="option-1-2-1"> Outcome 1</button>
+            <button class="option-1-2-2">Outcome 2</button>
         </div>
-        <div class="option-1-2-screen">
-            <h1>The tourist tells you how to get to base!</h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
+       <div class="option-one-one-one"> 
+        <h1>You did it! You keep waking and end up finding base camp and your research team!</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaJyCw_rxFNEf7F-CbD--lp-ybAKntW4agPA&s" alt="basecamp">
+        <button class="startover1"> Start Over</button> 
+       </div>
+        <div class="option-one-one-two">
+            <h1>UH OH! You remain lost forever and eventually starve and die.</h1>
+            <img src="https://www.motherjones.com/wp-content/uploads/2022/12/20210907_zip_s255_025_2000x1124.jpeg?w=990" alt="lost">
+            <button class="startover2"> Start Over</button>
         </div>
-        <!-- Put the end of the story if the user chose option 2.-->
-        <div class="option-two-end">
-            <h1>Put final part of your story based on if they chosen option 2 at the beginning </h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
+        
+        <div class="option-one-two-one">
+            <h1>You are Dead! They thought you were a threat so they shot you with a gun</h1>
+            <img src="https://i.ytimg.com/vi/dK1B9b_0Z2Y/maxresdefault.jpg" alt="shot">
+            <button class="startover3"> Start Over</button>
         </div>
+
+        <div class="option-one-two-two">
+            <h1>Bad Luck! You get eaten by an enormous Hippo!</h1>
+            <img src="https://i.ytimg.com/vi/DAGBqS-4lAA/maxresdefault.jpg" alt="hippo">
+            <button class="startover4"> Start Over</button>
+        </div>
+       
     </body>
 </html>

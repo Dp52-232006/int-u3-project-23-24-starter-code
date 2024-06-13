@@ -1,26 +1,29 @@
 /* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
 
-/* 
+ .story-opening,
 .option-one-screen, 
-.option-two-screen, 
-.option-one-end, 
-.option-two-end  {
-   display:none;
-}
-*/
+.option-two-end, 
+.option-one-one, 
+.option-one-two,
+.option-one-one-one,
+.option-one-one-two,
+.option-one-two-one,
+.option-one-two-two  
+{display: none;}
 
 
 /* Feel free to change any of the styling below!*/
 html,
 body {
+    background-color: rgb(26, 149, 26);
     margin: 0;
     padding: 0;
 }
 
 /* Style the body with a background color or image if desired */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color:rgb(26, 149, 26);
     text-align: center;
     padding: 20px;
 }
@@ -31,14 +34,30 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
 }
-
+.namedisplay {
+    color: #f286f6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    size: 50px;
+}
 /* Style the story opening container */
-.story-opening {
-    background-color: #fff;
-    border: 1px solid #ccc;
+.Name,
+.story-opening,
+.option-one-screen,
+.option-two-end,
+.option-one-one,
+.option-one-two,
+.option-one-one-two,
+.option-one-one-one,
+.option-one-two-one,
+.option-one-two-two {
+    background-color: #81f78d;
+    border: 5px solid #199df4;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 75%;
+    margin: auto;
+
 }
 
 /* Style the story image */
@@ -56,54 +75,92 @@ body {
 
 /* Style the buttons container */
 .buttons {
-    margin: 20px;
+    margin: 50px;
 }
 
 /* Style the option buttons */
 button {
     font-size: 16px;
     padding: 10px 20px;
-    margin: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+    margin: auto;
+    background-color: #1c80ea;
+    color: #fff7f7;
+    border: 2px solid  #b61abb;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    display:block;
+    margin-bottom: 10px;
+   
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #b61abb;
 }
 
 /* Style the screens for option one and option two */
-.option-one-screen,
-.option-two-screen,
-.option-one-end,
-.option-two-end {
-    background-color: #fff;
-    border: 1px solid #ccc;
+.option-one-screen, 
+.option-two-end, 
+.option-one-one, 
+.option-one-two,
+.option-one-one-one,
+.option-one-one-two,
+.option-one-two-one,
+.option-one-two-two {
+    background-color: #81f78d;
+    border: 1px solid #2d8ef5;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
+    color: aliceblue;
+   
 }
 
 /* Style the images in the screens */
-.option-one-screen img,
-.option-two-screen img,
-.option-one-end img,
-.option-two-end img {
+.story img,
+.story-opening img,
+.option-one-screen img, 
+.option-two-end img, 
+.option-one-one img, 
+.option-one-two img,
+.option-one-one-one img,
+.option-one-one-two img,
+.option-one-two-one img,
+.option-one-two-two img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    height: 300px;
+    border: 5px solid rgb(245, 143, 221);
+    padding: 5px;
+    margin: auto;
 }
 
 /* Style the text in the screens */
-.option-one-screen h1,
-.option-two-screen h1,
-.option-one-end h1,
-.option-two-end h1 {
-    font-size: 20px;
+.namedisplay
+.story h1,
+.story-opening h1,
+.option-one-screen h1, 
+.option-two-end h1, 
+.option-one-one h1, 
+.option-one-two h1,
+.option-one-one-one h1,
+.option-one-one-two h1,
+.option-one-two-one h1,
+.option-one-two-two h1 {
+    font-size: 25px;
     margin-bottom: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(218, 16, 208);
+    font-weight: 1000;
+    text-align: center;
+
+}
+p {
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    text-align: center;
 }
